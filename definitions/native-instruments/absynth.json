@@ -1,0 +1,23 @@
+{
+ "schema": "reable-definitions/1",
+ "definitions": [
+  {
+   "id": "absynth",
+   "match": [
+    "^absynth\\b"
+   ],
+   "vendor": "Native Instruments",
+   "adapter": "container-copy",
+   "status": "validated",
+   "validated": [
+    {
+     "live": "12.4",
+     "date": "2026-10-09",
+     "variant": "transfer",
+     "by": "maintainer",
+     "note": "même conteneur que Kontakt/Massive (non rejoué sur Absynth seul)"
+    }
+   ]
+  }
+ ]
+}

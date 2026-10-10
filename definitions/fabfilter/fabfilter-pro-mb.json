@@ -1,0 +1,15 @@
+{
+ "schema": "reable-definitions/1",
+ "definitions": [
+  {
+   "id": "fabfilter pro-mb",
+   "match": [
+    "^fabfilter pro-mb\\b"
+   ],
+   "vendor": "FabFilter",
+   "adapter": null,
+   "status": "unsupported",
+   "validated": []
+  }
+ ]
+}

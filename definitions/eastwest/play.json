@@ -1,0 +1,15 @@
+{
+ "schema": "reable-definitions/1",
+ "definitions": [
+  {
+   "id": "play",
+   "match": [
+    "^play$"
+   ],
+   "vendor": "EastWest",
+   "adapter": null,
+   "status": "unsupported",
+   "validated": []
+  }
+ ]
+}

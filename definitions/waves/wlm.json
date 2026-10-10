@@ -1,0 +1,15 @@
+{
+ "schema": "reable-definitions/1",
+ "definitions": [
+  {
+   "id": "wlm",
+   "match": [
+    "^wlm\\b"
+   ],
+   "vendor": "Waves",
+   "adapter": null,
+   "status": "unsupported",
+   "validated": []
+  }
+ ]
+}

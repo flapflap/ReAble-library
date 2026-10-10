@@ -1,0 +1,24 @@
+{
+ "schema": "reable-definitions/1",
+ "definitions": [
+  {
+   "id": "massive x",
+   "match": [
+    "^massive x$"
+   ],
+   "vendor": "Native Instruments",
+   "adapter": "container-copy",
+   "decoder": "ni_msgpack",
+   "status": "validated",
+   "validated": [
+    {
+     "live": "12.4",
+     "date": "2026-10-09",
+     "variant": "transfer",
+     "by": "maintainer",
+     "note": "AU → VST3, duplication de piste"
+    }
+   ]
+  }
+ ]
+}

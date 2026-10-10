@@ -1,0 +1,118 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "ReAble — définition de plugin",
+ "type": "object",
+ "required": [
+  "schema",
+  "definitions"
+ ],
+ "properties": {
+  "schema": {
+   "const": "reable-definitions/1"
+  },
+  "definitions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "match",
+     "status"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "minLength": 1
+     },
+     "match": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "minItems": 1,
+      "description": "expressions régulières sur le nom du plugin en minuscules"
+     },
+     "vendor": {
+      "type": "string"
+     },
+     "adapter": {
+      "enum": [
+       "container-copy",
+       "izotope",
+       "none",
+       null
+      ]
+     },
+     "decoder": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "status": {
+      "enum": [
+       "validated",
+       "experimental",
+       "unsupported"
+      ]
+     },
+     "preferred_state_mode": {
+      "enum": [
+       "transfer",
+       "header",
+       "none"
+      ]
+     },
+     "validated": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "required": [
+        "live",
+        "date",
+        "variant"
+       ],
+       "properties": {
+        "live": {
+         "type": "string"
+        },
+        "date": {
+         "type": "string"
+        },
+        "variant": {
+         "type": "string"
+        },
+        "result": {
+         "enum": [
+          "ok",
+          "ko"
+         ]
+        },
+        "by": {
+         "type": "string"
+        },
+        "note": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "notes": {
+      "type": "string"
+     },
+     "copy_controller_state": {
+      "type": "boolean",
+      "description": "écrire aussi l'état dans ControllerState du device VST3"
+     },
+     "state_transfer_from": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "description": "expressions régulières des versions sources dont l'état est repris ; vide = toutes ; les autres passent en réglages par défaut"
+     }
+    }
+   }
+  }
+ }
+}

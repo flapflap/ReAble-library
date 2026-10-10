@@ -1,0 +1,17 @@
+{
+ "schema": "reable-definitions/1",
+ "definitions": [
+  {
+   "id": "neutron",
+   "match": [
+    "^(izotope )?neutron\\b"
+   ],
+   "vendor": "iZotope",
+   "adapter": "izotope",
+   "decoder": "izotope_json",
+   "status": "experimental",
+   "validated": [],
+   "notes": "Même famille de conteneur qu'Ozone (adaptateur izotope), mais jamais testé dans Live : le mainteneur n'a plus Neutron installé. Reste « experimental » (bloqué) jusqu'à un test par un bêta-testeur : ouvrir le set converti dans Live, l'enregistrer sous un autre nom, puis `reable verify`. Ozone a besoin que ControllerState contienne aussi l'état ; à essayer ici aussi (copy_controller_state)."
+  }
+ ]
+}
